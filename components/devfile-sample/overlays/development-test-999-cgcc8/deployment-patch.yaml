@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/hacdev/user1-tenant/devfile-sample/devfile-sample@sha256:c18430f74e2471962922bc51ed05b7aba1332e3fe477e39eaf470c7c28b41b51
+        name: my-nodejs
+        resources: {}
+status: {}
